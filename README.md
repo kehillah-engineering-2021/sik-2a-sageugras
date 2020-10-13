@@ -129,6 +129,3 @@ void loop()
 }
 ```
 
-### Code in Action
-
-

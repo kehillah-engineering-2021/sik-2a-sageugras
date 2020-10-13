@@ -22,6 +22,7 @@ Arrays are used like variables, but they can store multiple values. The simplest
 
 #### Hardware Hookup
 ##### Buzzer
+![buzzer_polarity](https://user-images.githubusercontent.com/54454824/95893397-c046db00-0d3c-11eb-948d-8d9eb00ff5b2.jpg)
 The buzzer is polarized. To see which leg is positive and which is negative, flip the buzzer over and look at the markings underneath. Keep track of which pin is where, as they will be hard to see once inserted into the breadboard. There is also text on the positive side of the buzzer, along with a tiny (+) symbol.
 
 ##### Volume Knob
@@ -30,7 +31,7 @@ All of the circuits in Project 2 make use of a potentiometer as a rudimentary vo
 Ready to start hooking everything up? Check out the circuit diagram and hookup table below to see how everything is connected.
 
 ##### Circuit Diagram
-
+![SIK_Circuit_2A_buzzer](https://user-images.githubusercontent.com/54454824/95893401-c1780800-0d3c-11eb-900d-6749dd322b14.jpg)
 
 ### Code Explanation
 

@@ -38,7 +38,96 @@ Ready to start hooking everything up? Check out the circuit diagram and hookup t
 ![SIK_Circuit_2A_buzzer](https://user-images.githubusercontent.com/54454824/95893401-c1780800-0d3c-11eb-900d-6749dd322b14.jpg)
 
 ### Code Explanation
+1. Set output pin for the speaker.
+```
+void setup()
+{
+  pinMode(speakerPin, OUTPUT);   
+}
+```
+2. An array to look up notes.
+```
+char notes[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C', 'D', 'E', 'F', 'G', 'A', 'B', ' '};
+int frequencies[] = {131, 147, 165, 175, 196, 220, 247, 262, 294, 330, 349, 392, 440, 494, 0};
+```
+3. Play the frequency that corrosponds to the note and the number of beats passed in the play function.
+```
+tone(speakerPin, currentFrequency, beats * beatLength);
+  delay(beats * beatLength);  
+  delay(50);     
+```
+4. Play Jingle Bells
+```
+void loop()
+{ // jingle bells
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play(' ', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play(' ', 3);
+  play('E', 3);
+  play('G', 3);
+  play('C', 3);
+  play('D', 3);
+  play('E', 3);
+  play(' ', 3);
+  play(' ', 3);
+  play(' ', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play('D', 3);
+  play('D', 3);
+  play('E', 3);
+  play('D', 3);
+  play(' ', 3);
+  play('G', 3);
+  play(' ', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play(' ', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play(' ', 3);
+  play('E', 3);
+  play('G', 3);
+  play('C', 3);
+  play('D', 3);
+  play('E', 3);
+  play(' ', 3);
+  play(' ', 3);
+  play(' ', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('F', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play('E', 3);
+  play('G', 3);
+  play('G', 3);
+  play('F', 3);
+  play('D', 3);
+  play('C', 3);
 
+
+  while (true) {}     //get stuck in this loop forever so that the song only plays once
+}
+```
 
 ### Code in Action
 

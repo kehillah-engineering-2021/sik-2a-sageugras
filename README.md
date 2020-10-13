@@ -12,6 +12,7 @@ In this circuit, you'll use the RedBoard and a small buzzer to make music, and y
 The buzzer uses a small magnetic coil to vibrate a metal disc inside a plastic housing. By pulsing electricity through the coil at different rates, different frequencies (pitches) of sound can be produced. Attaching a potentiometer to the output allows you to limit the amount of current moving through the buzzer and lower its volume.
 #### New Concepts:
 ##### Reset Button
+![reset2](https://user-images.githubusercontent.com/54454824/95893091-4f9fbe80-0d3c-11eb-8096-ef90d6333b8a.jpg)
 The RedBoard has a built-in reset button. This button will reset the board and start the code over from the beginning, running what is in setup() and then loop().
 ##### Tone Function
 To control the buzzer, you will use the tone function. This function is similar to PWM in that it generates a wave that is of a certain frequency on the specified pin. The frequency and duration can both be passed to the tone() function when calling it. To turn the tone off, you need to call noTone() or pass a duration of time for it to play and then stop. Unlike PWM, tone() can be used on any digital pin.
